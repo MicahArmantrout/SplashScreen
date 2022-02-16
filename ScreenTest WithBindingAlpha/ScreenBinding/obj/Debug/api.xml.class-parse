@@ -1,0 +1,1588 @@
+<api
+  api-source="class-parse">
+  <package
+    name="androidx.core.splashscreen"
+    jni-name="androidx/core/splashscreen">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/graphics/drawable/Drawable;"
+      extends="android.graphics.drawable.Drawable"
+      extends-generic-aware="android.graphics.drawable.Drawable"
+      final="true"
+      name="MaskedDrawable"
+      jni-signature="Landroidx/core/splashscreen/MaskedDrawable;"
+      source-file-name="MaskedDrawable.kt"
+      static="false"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="MaskedDrawable"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/drawable/Drawable;F)V">
+        <parameter
+          name="drawable"
+          type="android.graphics.drawable.Drawable"
+          jni-type="Landroid/graphics/drawable/Drawable;"
+          not-null="true" />
+        <parameter
+          name="maskDiameter"
+          type="float"
+          jni-type="F" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="draw"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Canvas;)V">
+        <parameter
+          name="canvas"
+          type="android.graphics.Canvas"
+          jni-type="Landroid/graphics/Canvas;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpacity"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onBoundsChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Rect;)V">
+        <parameter
+          name="bounds"
+          type="android.graphics.Rect"
+          jni-type="Landroid/graphics/Rect;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAlpha"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="alpha"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setColorFilter"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/ColorFilter;)V">
+        <parameter
+          name="colorFilter"
+          type="android.graphics.ColorFilter"
+          jni-type="Landroid/graphics/ColorFilter;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen;"
+      source-file-name="SplashScreen.kt"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreen"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Landroid/app/Activity;Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$install"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen;)V">
+        <parameter
+          name="$this"
+          type="androidx.core.splashscreen.SplashScreen"
+          jni-type="Landroidx/core/splashscreen/SplashScreen;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="installSplashScreen"
+        native="false"
+        return="androidx.core.splashscreen.SplashScreen"
+        jni-return="Landroidx/core/splashscreen/SplashScreen;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)Landroidx/core/splashscreen/SplashScreen;"
+        return-not-null="true">
+        <parameter
+          name="obj"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setKeepVisibleCondition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V">
+        <parameter
+          name="condition"
+          type="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setOnExitAnimationListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V">
+        <parameter
+          name="listener"
+          type="androidx.core.splashscreen.SplashScreen.OnExitAnimationListener"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;"
+          not-null="true" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Companion"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="androidx.core.splashscreen.SplashScreen.Companion"
+        type-generic-aware="androidx.core.splashscreen.SplashScreen.Companion"
+        jni-signature="Landroidx/core/splashscreen/SplashScreen$Companion;"
+        not-null="true"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Companion"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Companion;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreen.Companion"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V">
+        <parameter
+          name="$constructor_marker"
+          type="kotlin.jvm.internal.DefaultConstructorMarker"
+          jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="installSplashScreen"
+        native="false"
+        return="androidx.core.splashscreen.SplashScreen"
+        jni-return="Landroidx/core/splashscreen/SplashScreen;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)Landroidx/core/splashscreen/SplashScreen;"
+        return-not-null="true">
+        <parameter
+          name="$this$installSplashScreen"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SplashScreen.Impl"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreen.Impl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$getMSplashScreenViewProvider$p"
+        native="false"
+        return="androidx.core.splashscreen.SplashScreenViewProvider"
+        jni-return="Landroidx/core/splashscreen/SplashScreenViewProvider;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$Impl;)Landroidx/core/splashscreen/SplashScreenViewProvider;">
+        <parameter
+          name="$this"
+          type="androidx.core.splashscreen.SplashScreen.Impl"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="access$setMSplashScreenViewProvider$p"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="true"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$Impl;Landroidx/core/splashscreen/SplashScreenViewProvider;)V">
+        <parameter
+          name="$this"
+          type="androidx.core.splashscreen.SplashScreen.Impl"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;" />
+        <parameter
+          name="&lt;set-?&gt;"
+          type="androidx.core.splashscreen.SplashScreenViewProvider"
+          jni-type="Landroidx/core/splashscreen/SplashScreenViewProvider;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="dispatchOnExitAnimation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreenViewProvider;)V">
+        <parameter
+          name="splashScreenViewProvider"
+          type="androidx.core.splashscreen.SplashScreenViewProvider"
+          jni-type="Landroidx/core/splashscreen/SplashScreenViewProvider;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getActivity"
+        native="false"
+        return="android.app.Activity"
+        jni-return="Landroid/app/Activity;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/app/Activity;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getBackgroundColor"
+        native="false"
+        return="java.lang.Integer"
+        jni-return="Ljava/lang/Integer;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Integer;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getBackgroundResId"
+        native="false"
+        return="java.lang.Integer"
+        jni-return="Ljava/lang/Integer;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Integer;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getFinalThemeId"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getHasBackground"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getIcon"
+        native="false"
+        return="android.graphics.drawable.Drawable"
+        jni-return="Landroid/graphics/drawable/Drawable;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/graphics/drawable/Drawable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getSplashScreenWaitPredicate"
+        native="false"
+        return="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+        jni-return="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="install"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setBackgroundColor"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setBackgroundResId"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setFinalThemeId"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setHasBackground"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setIcon"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/drawable/Drawable;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="android.graphics.drawable.Drawable"
+          jni-type="Landroid/graphics/drawable/Drawable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setKeepVisibleCondition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V">
+        <parameter
+          name="keepOnScreenCondition"
+          type="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnExitAnimationListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V">
+        <parameter
+          name="exitAnimationListener"
+          type="androidx.core.splashscreen.SplashScreen.OnExitAnimationListener"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setPostSplashScreenTheme"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/res/Resources$Theme;Landroid/util/TypedValue;)V">
+        <parameter
+          name="currentTheme"
+          type="android.content.res.Resources.Theme"
+          jni-type="Landroid/content/res/Resources$Theme;"
+          not-null="true" />
+        <parameter
+          name="typedValue"
+          type="android.util.TypedValue"
+          jni-type="Landroid/util/TypedValue;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setSplashScreenWaitPredicate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+          not-null="true" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      enclosing-method-name="dispatchOnExitAnimation"
+      enclosing-method-signature="(Landroidx/core/splashscreen/SplashScreenViewProvider;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl.dispatchOnExitAnimation.1"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl$dispatchOnExitAnimation$1;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      enclosing-method-name="setKeepVisibleCondition"
+      enclosing-method-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl.setKeepVisibleCondition.1"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl$setKeepVisibleCondition$1;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="private">
+      <implements
+        name="android.view.ViewTreeObserver.OnPreDrawListener"
+        name-generic-aware="android.view.ViewTreeObserver.OnPreDrawListener"
+        jni-type="Landroid/view/ViewTreeObserver$OnPreDrawListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPreDraw"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      enclosing-method-name="setOnExitAnimationListener"
+      enclosing-method-signature="(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl.setOnExitAnimationListener.2"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl$setOnExitAnimationListener$2;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="private">
+      <implements
+        name="android.view.View.OnLayoutChangeListener"
+        name-generic-aware="android.view.View.OnLayoutChangeListener"
+        jni-type="Landroid/view/View$OnLayoutChangeListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLayoutChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;IIIIIIII)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;"
+          not-null="true" />
+        <parameter
+          name="left"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="top"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="right"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="bottom"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="oldLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="oldTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="oldRight"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="oldBottom"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="(Landroid/app/Activity;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl.splashScreenWaitPredicate.1"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl$splashScreenWaitPredicate$1;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+        name-generic-aware="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+        jni-type="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="shouldKeepOnScreen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="INSTANCE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="androidx.core.splashscreen.SplashScreen.Impl.splashScreenWaitPredicate.1"
+        type-generic-aware="androidx.core.splashscreen.SplashScreen.Impl.splashScreenWaitPredicate.1"
+        jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl$splashScreenWaitPredicate$1;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroidx/core/splashscreen/SplashScreen$Impl;"
+      extends="androidx.core.splashscreen.SplashScreen.Impl"
+      extends-generic-aware="androidx.core.splashscreen.SplashScreen.Impl"
+      final="true"
+      name="SplashScreen.Impl31"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl31;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreen.Impl31"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getPreDrawListener"
+        native="false"
+        return="android.view.ViewTreeObserver.OnPreDrawListener"
+        jni-return="Landroid/view/ViewTreeObserver$OnPreDrawListener;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/ViewTreeObserver$OnPreDrawListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="install"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setKeepVisibleCondition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V">
+        <parameter
+          name="keepOnScreenCondition"
+          type="androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnExitAnimationListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V">
+        <parameter
+          name="exitAnimationListener"
+          type="androidx.core.splashscreen.SplashScreen.OnExitAnimationListener"
+          jni-type="Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setPreDrawListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="android.view.ViewTreeObserver.OnPreDrawListener"
+          jni-type="Landroid/view/ViewTreeObserver$OnPreDrawListener;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl31;"
+      enclosing-method-name="setKeepVisibleCondition"
+      enclosing-method-signature="(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl31.setKeepVisibleCondition.1"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl31$setKeepVisibleCondition$1;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="private">
+      <implements
+        name="android.view.ViewTreeObserver.OnPreDrawListener"
+        name-generic-aware="android.view.ViewTreeObserver.OnPreDrawListener"
+        jni-type="Landroid/view/ViewTreeObserver$OnPreDrawListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPreDraw"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreen$Impl31;"
+      enclosing-method-name="setOnExitAnimationListener"
+      enclosing-method-signature="(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreen.Impl31.setOnExitAnimationListener.1"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$Impl31$setOnExitAnimationListener$1;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="android.window.SplashScreen.OnExitAnimationListener"
+        name-generic-aware="android.window.SplashScreen.OnExitAnimationListener"
+        jni-type="Landroid/window/SplashScreen$OnExitAnimationListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="onSplashScreenExit"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/window/SplashScreenView;)V">
+        <parameter
+          name="it"
+          type="android.window.SplashScreenView"
+          jni-type="Landroid/window/SplashScreenView;"
+          not-null="true" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SplashScreen.KeepOnScreenCondition"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="shouldKeepOnScreen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SplashScreen.OnExitAnimationListener"
+      jni-signature="Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;"
+      source-file-name="SplashScreen.kt"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSplashScreenExit"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroidx/core/splashscreen/SplashScreenViewProvider;)V">
+        <parameter
+          name="splashScreenViewProvider"
+          type="androidx.core.splashscreen.SplashScreenViewProvider"
+          jni-type="Landroidx/core/splashscreen/SplashScreenViewProvider;"
+          not-null="true" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="SplashScreenViewProvider"
+      jni-signature="Landroidx/core/splashscreen/SplashScreenViewProvider;"
+      source-file-name="SplashScreenViewProvider.kt"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreenViewProvider"
+        static="false"
+        visibility="kotlin-internal"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="ctx"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreenViewProvider"
+        static="false"
+        visibility="kotlin-internal"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/window/SplashScreenView;Landroid/app/Activity;)V">
+        <parameter
+          name="platformView"
+          type="android.window.SplashScreenView"
+          jni-type="Landroid/window/SplashScreenView;"
+          not-null="true" />
+        <parameter
+          name="ctx"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getIconAnimationDurationMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getIconAnimationStartMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getIconView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/View;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/View;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="remove"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SplashScreenViewProvider.ViewImpl"
+      jni-signature="Landroidx/core/splashscreen/SplashScreenViewProvider$ViewImpl;"
+      source-file-name="SplashScreenViewProvider.kt"
+      static="true"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreenViewProvider.ViewImpl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createSplashScreenView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getActivity"
+        native="false"
+        return="android.app.Activity"
+        jni-return="Landroid/app/Activity;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/app/Activity;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconAnimationDurationMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconAnimationStartMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/View;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSplashScreenView"
+        native="false"
+        return="android.view.ViewGroup"
+        jni-return="Landroid/view/ViewGroup;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/ViewGroup;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="remove"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Landroidx/core/splashscreen/SplashScreenViewProvider$ViewImpl;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="(Landroid/app/Activity;)V"
+      jni-extends="Lkotlin/jvm/internal/Lambda;"
+      extends="kotlin.jvm.internal.Lambda"
+      extends-generic-aware="kotlin.jvm.internal.Lambda"
+      final="true"
+      name="SplashScreenViewProvider.ViewImpl._splashScreenView.2"
+      jni-signature="Landroidx/core/splashscreen/SplashScreenViewProvider$ViewImpl$_splashScreenView$2;"
+      source-file-name="SplashScreenViewProvider.kt"
+      static="true"
+      visibility="">
+      <implements
+        name="kotlin.jvm.functions.Function0"
+        name-generic-aware="kotlin.jvm.functions.Function0&lt;android.view.ViewGroup&gt;"
+        jni-type="Lkotlin/jvm/functions/Function0&lt;Landroid/view/ViewGroup;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="invoke"
+        native="false"
+        return="android.view.ViewGroup"
+        jni-return="Landroid/view/ViewGroup;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/ViewGroup;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="invoke"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Ljava/lang/Object;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroidx/core/splashscreen/SplashScreenViewProvider$ViewImpl;"
+      extends="androidx.core.splashscreen.SplashScreenViewProvider.ViewImpl"
+      extends-generic-aware="androidx.core.splashscreen.SplashScreenViewProvider.ViewImpl"
+      final="true"
+      name="SplashScreenViewProvider.ViewImpl31"
+      jni-signature="Landroidx/core/splashscreen/SplashScreenViewProvider$ViewImpl31;"
+      source-file-name="SplashScreenViewProvider.kt"
+      static="true"
+      visibility="private">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SplashScreenViewProvider.ViewImpl31"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createSplashScreenView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconAnimationDurationMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconAnimationStartMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/View;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getPlatformView"
+        native="false"
+        return="android.window.SplashScreenView"
+        jni-return="Landroid/window/SplashScreenView;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/window/SplashScreenView;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSplashScreenView"
+        native="false"
+        return="android.view.ViewGroup"
+        jni-return="Landroid/view/ViewGroup;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Landroid/view/ViewGroup;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSplashScreenView"
+        native="false"
+        return="android.window.SplashScreenView"
+        jni-return="Landroid/window/SplashScreenView;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/window/SplashScreenView;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="remove"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="setPlatformView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/window/SplashScreenView;)V">
+        <parameter
+          name="&lt;set-?&gt;"
+          type="android.window.SplashScreenView"
+          jni-type="Landroid/window/SplashScreenView;"
+          not-null="true" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="platformView"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.window.SplashScreenView"
+        type-generic-aware="android.window.SplashScreenView"
+        jni-signature="Landroid/window/SplashScreenView;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+</api>

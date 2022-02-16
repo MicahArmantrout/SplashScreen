@@ -1,0 +1,18 @@
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\bin\Debug\ScreenBinding.dll
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\bin\Debug\ScreenBinding.pdb
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\__AndroidLibraryProjects__.zip
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\ScreenBinding.csproj.AssemblyReference.cache
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\ScreenBinding.csproj.CoreCompileInputs.cache
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\ScreenBinding.dll
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenBinding\obj\Debug\ScreenBinding.pdb
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\bin\Debug\ScreenBinding.dll
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\bin\Debug\ScreenBinding.pdb
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\__AndroidLibraryProjects__.zip
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\ScreenBinding.csproj.AssemblyReference.cache
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\ScreenBinding.csproj.CoreCompileInputs.cache
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\ScreenBinding.dll
+C:\Users\MicahArmantrout\source\repos\SplashScreen\ScreenTest\ScreenTest WithBindingAlpha\ScreenBinding\obj\Debug\ScreenBinding.pdb

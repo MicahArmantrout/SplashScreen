@@ -1,0 +1,11 @@
+androidx/core/splashscreen/SplashScreen = Androidx.Core.Splashscreen.SplashScreen
+  Companion = Companion
+  installSplashScreen(Landroid/app/Activity;)Landroidx/core/splashscreen/SplashScreen; = InstallSplashScreen(Android.App.Activity)
+  setKeepVisibleCondition(Landroidx/core/splashscreen/SplashScreen$KeepOnScreenCondition;)V = SetKeepVisibleCondition(Androidx.Core.Splashscreen.SplashScreen.IKeepOnScreenCondition)
+  setOnExitAnimationListener(Landroidx/core/splashscreen/SplashScreen$OnExitAnimationListener;)V = SetOnExitAnimationListener(Androidx.Core.Splashscreen.SplashScreen.IOnExitAnimationListener)
+androidx/core/splashscreen/SplashScreenViewProvider = Androidx.Core.Splashscreen.SplashScreenViewProvider
+  getIconAnimationDurationMillis()J = IconAnimationDurationMillis
+  getIconAnimationStartMillis()J = IconAnimationStartMillis
+  getIconView()Landroid/view/View; = IconView
+  getView()Landroid/view/View; = View
+  remove()V = Remove()
